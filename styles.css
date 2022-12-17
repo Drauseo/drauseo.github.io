@@ -90,3 +90,12 @@ nav ul li a:hover::after {
   border-width: 9px;
   border-color: rgb(57, 2, 109);;
 }
+@media (min-width:375px){
+  .img-about {
+    text-align: center;
+  }
+  .im-1 {
+    width: 33%;
+  }
+
+}
