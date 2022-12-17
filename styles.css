@@ -90,13 +90,13 @@ nav ul li a:hover::after {
   border-width: 9px;
   border-color: rgb(57, 2, 109);;
 }
-@media (max-width:375px){
+@media (Max-width:400px){
   .header-text {
     margin-top: 20%;
-    font-size: 15px;
+    font-size: 20px;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 10px;
     text-align: center;
   }
@@ -112,7 +112,7 @@ nav ul li a:hover::after {
     text-align: center;
   }
   .im-1 {
-    width: 33%;
+    width: 70%;
   }
 
 }
