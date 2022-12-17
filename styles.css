@@ -91,6 +91,12 @@ nav ul li a:hover::after {
   border-color: rgb(57, 2, 109);;
 }
 @media (min-width:375px){
+ 
+  #about h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
   .img-about {
     text-align: center;
   }
