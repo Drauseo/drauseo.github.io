@@ -14,13 +14,15 @@
 <div id="header">
      <div class="container">
         <nav id="nav-bar">
-             <img src="Mi proyecto.png" class="logo">
-            <ul>
+             <img src="sciencelogo.png" class="logo">
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class=" fas fa-times" onclick="closemenu()"></i>
           </ul>
+          <i class = "fas fa-bars" onclick="openmenu()"></i>
         </nav>
         
         <div class="header-text">
@@ -46,8 +48,24 @@
         <br>Accusantium temporibus doloremque repellendus harum quam, provident,
         <br> numquam quia ad sequi neque magni blanditiis iusto minima quis ipsum atque qui! A, provident!<br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in sequi dicta incidunt, maiores at doloribus quas neque. 
+        Eos libero tempora nulla ut deserunt amet quo reiciendis distinctio rem asperiores?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo voluptas rerum totam adipisci ut rem quia ab aspernatur, 
+        beatae mollitia vel, quaerat fugiat debitis repellat veniam! Pariatur quia minus doloribus?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, dolor saepe. Perspiciatis autem nesciunt cumque ab officia recusandae,
+         magni molestias delectus nemo laboriosam eveniet, repudiandae deleniti quae animi. Voluptatum, optio.
     </div>
     
 </div>
 </body>
+<script src="https://kit.fontawesome.com/29319dd8c8.js" crossorigin="anonymous"></script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
 </html>
