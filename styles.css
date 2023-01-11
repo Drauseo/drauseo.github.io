@@ -130,7 +130,7 @@ nav .fas {
 .tab-contents.active-tab {
   display: block;
 }
-@media (max-width: 600px) {
+@media (max-width: 710px) {
   .header-text {
     margin-top: 20%;
     font-size: 20px;
