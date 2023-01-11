@@ -1,71 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Creepster&family=Nanum+Gothic&family=New+Tegomin&family=Roboto:ital,wght@1,300&family=Space+Grotesk:wght@500&display=swap');
-        </style>
-</head>
-<body>
-<div id="header">
-     <div class="container">
+      @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Creepster&family=Nanum+Gothic&family=New+Tegomin&family=Roboto:ital,wght@1,300&family=Space+Grotesk:wght@500&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav id="nav-bar">
-             <img src="sciencelogo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <i class=" fas fa-times" onclick="closemenu()"></i>
+          <img src="sciencelogo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
-          <i class = "fas fa-bars" onclick="openmenu()"></i>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
-        
+
         <div class="header-text">
-            <p>Engineering Student</p>
-             <h1>Hey! Welcome,<br>I am Diego from Venezuela</h1>
+          <p>Engineering Student</p>
+          <h1>Hey! Welcome,<br />I am Diego from Venezuela</h1>
         </div>
-     </div>
+      </div>
     </div>
-             
-<!-- about section -->
-<div id="about">
-    <div class="img-about">
-        <img src="foto.jpg" alt="Profile-image" class="im-1" >
-    </div>
-    <div class="text">
-        <br>
-        <br>
+
+    <!-- about section -->
+    <div id="about">
+      <div class="img-about">
+        <img src="foto.jpg" alt="Profile-image" class="im-1" />
+      </div>
+      <div class="text">
+        <br />
+        <br />
         <h1 class="Aboutme-title">About Me</h1>
-        <br>
-        <br>
-    <p class="about-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        <br>Accusantium temporibus doloremque repellendus harum quam, provident,
-        <br> numquam quia ad sequi neque magni blanditiis iusto minima quis ipsum atque qui! A, provident!<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in sequi dicta incidunt, maiores at doloribus quas neque. 
-        Eos libero tempora nulla ut deserunt amet quo reiciendis distinctio rem asperiores?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo voluptas rerum totam adipisci ut rem quia ab aspernatur, 
-        beatae mollitia vel, quaerat fugiat debitis repellat veniam! Pariatur quia minus doloribus?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, dolor saepe. Perspiciatis autem nesciunt cumque ab officia recusandae,
-         magni molestias delectus nemo laboriosam eveniet, repudiandae deleniti quae animi. Voluptatum, optio.
+        <br />
+        <br />
+        <p class="about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <br />Accusantium temporibus doloremque repellendus harum quam,
+          provident, <br />
+          numquam quia ad sequi neque magni blanditiis iusto minima quis ipsum
+          atque qui! A, provident!<br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Quae in sequi dicta
+          incidunt, maiores at doloribus quas neque. Eos libero tempora nulla ut
+          deserunt amet quo reiciendis distinctio rem asperiores? Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Explicabo voluptas rerum
+          totam adipisci ut rem quia ab aspernatur, beatae mollitia vel, quaerat
+          fugiat debitis repellat veniam! Pariatur quia minus doloribus? Lorem
+          ipsum dolor sit amet consectetur, adipisicing elit. Corporis, dolor
+          saepe. Perspiciatis autem nesciunt cumque ab officia recusandae, magni
+          molestias delectus nemo laboriosam eveniet, repudiandae deleniti quae
+          animi. Voluptatum, optio.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">
+            Skills
+          </p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Self Taught Programmer</span><br /></li>
+            <li><span>Analist</span><br /></li>
+            <li><span>Writer</span><br /></li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>Admission Year: 2020- studying 9th trimester</span
+              ><br />Electronic Engineering in Computer Science
+            </li>
+            <li>
+              <span>Graduation Year: 2019</span><br />Certification by approval
+              of the Intermediate, Upper Intermediate and Advanced cycles of
+              English classes.
+            </li>
+            <li>
+              <span>freecodecamp.com</span><br />Responsive Web Design
+              Certification.
+            </li>
+            <li>
+              <span>freecodecamp.com</span><br />Javascript Algorithms and Data
+              Structure Certification.
+            </li>
+            <li><span>COS Academy.</span><br />Electronic course</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span
+                >TELEPILA ESTE C.A. (C.C. Trinitarias) | October 2020- January
+                2021</span
+              ><br />Technical assistant/Seller of electronic equipment.
+            </li>
+            <li>
+              <span
+                >Telemic C.A. Corporation (International) | Sep. 2021 -
+                Present</span
+              ><br />Integral Contact Center Agent.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    
-</div>
-</body>
-<script src="https://kit.fontawesome.com/29319dd8c8.js" crossorigin="anonymous"></script>
-<script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/29319dd8c8.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) { 
+      for (tablink of tablinks) {
+        // console.log(tablink);
+        // tablink.classList.toggle('active-link', !tablink.classList.contains('active-link'));
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
     var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
+    function openmenu() {
+      sidemenu.style.right = "0";
     }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
+    function closemenu() {
+      sidemenu.style.right = "-200px";
     }
-</script>
+  </script>
 </html>

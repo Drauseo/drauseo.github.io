@@ -60,24 +60,22 @@ nav ul li a:hover::after {
   font-size: 30px;
 }
 .header-text h1 {
- /*font-size: 60px;*/
+  /*font-size: 60px;*/
   text-align: center;
 }
 .header-text p {
   text-align: center;
 }
 #about {
-
 }
 .img-about {
   text-align: center;
 }
 .im-1 {
   width: 30%;
-  
 }
 #about p {
-  font-size: 30px;
+  font-size: 23px;
   padding-left: 30px;
 }
 #about h1 {
@@ -85,16 +83,54 @@ nav ul li a:hover::after {
   font-size: 60px;
 }
 .im-1 {
-  border-style: solid;
-  border-radius: 25%;
-  border-width: 9px;
-  border-color: rgb(57, 2, 109);;
+  border-radius: 15%;
 }
 nav .fas {
-display: none;
-
+  display: none;
 }
-@media (Max-width:600px){
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+  padding-left: 30px;
+}
+.tab-links {
+ margin-right: 50px;
+  font-size: 18px!important;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0px!important;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: purple;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  padding-left: 30px;
+}
+.tab-contents ul li span {
+  color: rgb(57, 2, 109);
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+@media (max-width: 600px) {
   .header-text {
     margin-top: 20%;
     font-size: 20px;
@@ -118,32 +154,31 @@ display: none;
   .im-1 {
     width: 50%;
   }
-nav .fas {
-display: block;
-font-size: 25px;
- 
-}
-nav ul {
-  background: rgb(57, 2, 109);
-  position: fixed;
-  top: 0;
-  right: -200px;
-  width: 200px;
-  height: 100vh;
-  padding-top: 50px;
-  transition: right 0.5s;
-}
-nav ul li {
-  display: block;
-  margin: 25px;
-}
-nav ul li a {
-  color: white;
-}
-nav ul .fas {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  cursor: pointer;
-}
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: rgb(57, 2, 109);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
 }
