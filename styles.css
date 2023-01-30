@@ -349,3 +349,8 @@ form .btn2 {
     font-size: 12px;
   }
 }
+#msg {
+  color: rgb(14, 239, 14);
+  margin-top: -40px;
+  display: block;
+}
